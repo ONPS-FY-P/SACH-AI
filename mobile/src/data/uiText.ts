@@ -1,0 +1,45 @@
+import { Language } from '../types';
+export const languageNames: Record<Language, string> = { en: 'English', hi: 'हिन्दी', mr: 'मराठी' };
+const en = {
+  assistant: 'Assistant', portals: 'Portals', emergency: 'Emergency', account: 'Account',
+  greeting: 'Your rights.\nYour next step.', intro: 'Tell us what happened. Find guidance, useful references and the right place to ask for help.',
+  ask: 'Describe your question…', send: 'Send question', mic: 'Record a question', stop: 'Stop recording',
+  thinking: 'Looking through the references…', transcribing: 'Transcribing your recording…',
+  recording: 'Recording · tap to finish', review: 'Review your transcript, then tap send.',
+  note: 'General legal information, not legal advice. For immediate danger, call 112.',
+  privacy: 'Questions and recordings are sent to our server for processing. Avoid sharing sensitive personal details.',
+  newChat: 'New chat', sources: 'References', read: 'Read aloud', stopReading: 'Stop reading', close: 'Close',
+  portalTitle: 'The right place\nto be heard.', portalIntro: 'A curated directory of 18 central government and national complaint services. Each link opens the official website.',
+  search: 'Search a service or issue…', open: 'Open official website', empty: 'No matching services. Try another search.',
+  emergencyTitle: 'Help, when\nit matters.', emergencyIntro: 'Tap a number to open your phone’s dialler. Your phone may ask you to confirm the call.',
+  emergency112: 'National emergency response', danger: 'Police, fire and medical emergencies', call: 'Call',
+  source: 'Official information', coverage: 'Some services have limited hours or state coverage. Use 112 for immediate danger.',
+  clearChat: 'Clear this chat', guest: 'Continue to assistant',
+  accountIntro: 'The assistant, portal links and emergency contacts work without an account.',
+  session: 'Chats stay in memory for this session. Closing the app clears the conversation. Your language choice is saved on this device.',
+};
+type Copy = { [K in keyof typeof en]: string };
+const hi: Copy = { ...en,
+  assistant: 'सहायक', portals: 'पोर्टल', emergency: 'आपातकाल', account: 'खाता', greeting: 'आपके अधिकार।\nआपका अगला कदम।',
+  intro: 'बताएँ कि क्या हुआ। मार्गदर्शन, संदर्भ और सहायता के सही विकल्प पाएँ।', ask: 'अपना सवाल लिखें…', send: 'सवाल भेजें', mic: 'सवाल रिकॉर्ड करें', stop: 'रिकॉर्डिंग रोकें',
+  thinking: 'संदर्भ खोज रहे हैं…', transcribing: 'रिकॉर्डिंग को लिख रहे हैं…', recording: 'रिकॉर्डिंग जारी · रोकने के लिए दबाएँ', review: 'लिखे हुए सवाल को जाँचें, फिर भेजें।',
+  note: 'सामान्य कानूनी जानकारी, कानूनी सलाह नहीं। तत्काल खतरे में 112 पर कॉल करें।', privacy: 'सवाल और रिकॉर्डिंग हमारे सर्वर को भेजे जाते हैं। संवेदनशील निजी जानकारी साझा न करें।',
+  newChat: 'नई चैट', sources: 'संदर्भ', read: 'सुनें', stopReading: 'सुनना रोकें', close: 'बंद करें',
+  portalTitle: 'अपनी बात\nसही जगह रखें।', portalIntro: 'केंद्र सरकार और राष्ट्रीय सेवाओं के 18 चुनिंदा शिकायत पोर्टल। लिंक आधिकारिक वेबसाइट खोलते हैं।',
+  search: 'सेवा या समस्या खोजें…', open: 'आधिकारिक वेबसाइट खोलें', empty: 'कोई सेवा नहीं मिली। दूसरा शब्द खोजें।',
+  emergencyTitle: 'ज़रूरत पर\nतुरंत सहायता।', emergencyIntro: 'नंबर दबाने पर फ़ोन का डायलर खुलेगा। फ़ोन कॉल की पुष्टि माँग सकता है।', emergency112: 'राष्ट्रीय आपातकालीन सहायता', danger: 'पुलिस, अग्निशमन और चिकित्सा आपातकाल', call: 'कॉल', source: 'आधिकारिक जानकारी',
+  coverage: 'कुछ सेवाओं के समय और राज्य में उपलब्धता अलग हैं। तत्काल खतरे में 112 पर कॉल करें।', clearChat: 'यह चैट हटाएँ', guest: 'सहायक पर जाएँ',
+  accountIntro: 'सहायक, पोर्टल और आपातकालीन नंबर बिना खाते के उपलब्ध हैं।', session: 'चैट इस सत्र की मेमोरी में रहती है। ऐप बंद करने पर चैट हट जाती है। भाषा इस डिवाइस पर सेव होती है।',
+};
+const mr: Copy = { ...en,
+  assistant: 'सहाय्यक', portals: 'पोर्टल', emergency: 'आपत्कालीन', account: 'खाते', greeting: 'तुमचे हक्क.\nतुमचे पुढचे पाऊल.',
+  intro: 'काय घडले ते सांगा. मार्गदर्शन, संदर्भ आणि मदतीचे योग्य पर्याय शोधा.', ask: 'तुमचा प्रश्न लिहा…', send: 'प्रश्न पाठवा', mic: 'प्रश्न रेकॉर्ड करा', stop: 'रेकॉर्डिंग थांबवा',
+  thinking: 'संदर्भ शोधत आहोत…', transcribing: 'रेकॉर्डिंगचे मजकूरात रूपांतर होत आहे…', recording: 'रेकॉर्डिंग सुरू · थांबवण्यासाठी दाबा', review: 'मजकूर तपासा, नंतर पाठवा.',
+  note: 'सामान्य कायदेशीर माहिती, कायदेशीर सल्ला नाही. तात्काळ धोक्यात 112 वर कॉल करा.', privacy: 'प्रश्न आणि रेकॉर्डिंग आमच्या सर्व्हरवर कडे पाठवले जातात. संवेदनशील वैयक्तिक माहिती देऊ नका.',
+  newChat: 'नवीन चॅट', sources: 'संदर्भ', read: 'ऐका', stopReading: 'ऐकणे थांबवा', close: 'बंद करा',
+  portalTitle: 'तुमची बाजू\nयोग्य ठिकाणी मांडा.', portalIntro: 'केंद्र सरकार आणि राष्ट्रीय सेवांचे 18 निवडक तक्रार पोर्टल. लिंक अधिकृत संकेतस्थळ उघडतात.', search: 'सेवा किंवा समस्या शोधा…', open: 'अधिकृत संकेतस्थळ उघडा', empty: 'सेवा सापडली नाही. दुसरा शब्द शोधा.',
+  emergencyTitle: 'गरजेच्या वेळी\nत्वरित मदत.', emergencyIntro: 'क्रमांक दाबल्यावर फोनचा डायलर उघडतो. फोन कॉलची पुष्टी मागू शकतो.', emergency112: 'राष्ट्रीय आपत्कालीन मदत', danger: 'पोलीस, अग्निशमन आणि वैद्यकीय आपत्काल', call: 'कॉल', source: 'अधिकृत माहिती',
+  coverage: 'काही सेवांच्या वेळा आणि राज्यातील उपलब्धता वेगळी आहे. तात्काळ धोक्यात 112 वापरा.', clearChat: 'ही चॅट हटवा', guest: 'सहाय्यकाकडे जा',
+  accountIntro: 'सहाय्यक, पोर्टल आणि आपत्कालीन क्रमांक खात्याशिवाय उपलब्ध आहेत.', session: 'चॅट या सत्राच्या मेमरीत राहते. ॲप बंद केल्यावर चॅट मिटते. भाषा या डिव्हाइसवर जतन होते.',
+};
+export const copy: Record<Language, Copy> = { en, hi, mr };

@@ -1,0 +1,77 @@
+{
+  "documents": [
+    {
+      "file": "a202345.json",
+      "title": "Bharatiya Nyaya Sanhita, 2023",
+      "records": 1,
+      "passages": 228
+    },
+    {
+      "file": "constitution_full_dataset.json",
+      "title": "Constitution of India",
+      "records": 715,
+      "passages": 755
+    },
+    {
+      "file": "the prevention of coruption act 1988.json",
+      "title": "Prevention of Corruption Act, 1988",
+      "records": 32,
+      "passages": 32
+    },
+    {
+      "file": "the_bharatiya_sakshya_adhiyanayam_2023.json",
+      "title": "Bharatiya Sakshya Adhiniyam, 2023",
+      "records": 1,
+      "passages": 96
+    },
+    {
+      "file": "THE_CONSUMER_PROTECTION_ACT_2019.json",
+      "title": "Consumer Protection Act, 2019",
+      "records": 1,
+      "passages": 74
+    },
+    {
+      "file": "THE_ENVIRONMENT.json",
+      "title": "Environment (Protection) Act, 1986",
+      "records": 1,
+      "passages": 19
+    },
+    {
+      "file": "THE_INFORMATION_TECHNOLOGY_ACT_2000.json",
+      "title": "Information Technology Act, 2000",
+      "records": 1,
+      "passages": 67
+    },
+    {
+      "file": "THE_JUVENILE_JUSTICE_(CARE_AND_PROTECTION_OF_CHILDREN)_ACT_2015.json",
+      "title": "Juvenile Justice Act, 2015",
+      "records": 1,
+      "passages": 94
+    },
+    {
+      "file": "The_Motor_Vehicles_Act_1988.json",
+      "title": "Motor Vehicles Act, 1988",
+      "records": 1,
+      "passages": 248
+    },
+    {
+      "file": "THE_PROTECTION_OF_CHILDREN_FROM_SEXUAL_OFFENCES_ACT_2012.json",
+      "title": "Protection of Children from Sexual Offences Act, 2012",
+      "records": 1,
+      "passages": 32
+    },
+    {
+      "file": "THE_PROTECTION_OF_WOMEN_FROM_DOMESTIC_VIOLENCE_ACT_2005.json",
+      "title": "Protection of Women from Domestic Violence Act, 2005",
+      "records": 1,
+      "passages": 21
+    }
+  ],
+  "passages": 1666,
+  "limitations": [
+    "Dates and legal amendments are not independently verified.",
+    "Whole-Act inputs are windowed, not section-parsed.",
+    "BNSS was not supplied as a distinct Act.",
+    "all_acts_combined.json is excluded to avoid duplicate indexing."
+  ]
+}

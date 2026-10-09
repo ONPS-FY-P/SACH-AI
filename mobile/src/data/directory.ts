@@ -1,0 +1,37 @@
+export const verifiedOn = '7 October 2026';
+export type Portal = { id: string; title: string; agency: string; description: string; category: string; url: string; icon: string; note?: string };
+export const portals: Portal[] = [
+ {id:'cpgrams',title:'CPGRAMS',agency:'Department of Administrative Reforms',description:'Raise and track grievances about central government services and departments.',category:'Public services',url:'https://pgportal.gov.in/',icon:'landmark',note:'Not for RTI requests or matters pending in court.'},
+ {id:'cyber',title:'National Cyber Crime Portal',agency:'Ministry of Home Affairs',description:'Report online fraud, identity theft, cyber harassment and other cybercrime.',category:'Cybercrime',url:'https://cybercrime.gov.in/',icon:'shield',note:'For financial cyber fraud, call 1930 promptly.'},
+ {id:'consumer',title:'National Consumer Helpline',agency:'Department of Consumer Affairs',description:'Raise grievances about purchases, refunds, faulty products and services.',category:'Consumer rights',url:'https://consumerhelpline.gov.in/',icon:'bag',note:'Consumer helpline: 1915, 8 AM–8 PM.'},
+ {id:'ejagriti',title:'e-Jagriti',agency:'Department of Consumer Affairs',description:'Access the consumer commissions’ online case filing and case management platform.',category:'Consumer rights',url:'https://ejagriti.gov.in/',icon:'scale'},
+ {id:'ncw',title:'National Commission for Women',agency:'NCW · Government of India',description:'Register complaints about violations of women’s rights and seek assistance.',category:'Women & children',url:'https://ncwapps.nic.in/onlinecomplaintsv2/',icon:'heart'},
+ {id:'ncpcr',title:'E-Baal Nidan',agency:'National Commission for Protection of Child Rights',description:'Submit complaints relating to violations of child rights.',category:'Women & children',url:'https://ncpcr.gov.in/index_ebaalnidan.php',icon:'heart'},
+ {id:'nhrc',title:'National Human Rights Commission',agency:'NHRC · India',description:'Find the official complaint service for alleged human rights violations.',category:'Public services',url:'https://nhrc.nic.in/',icon:'scale'},
+ {id:'rbi',title:'RBI Complaint Management',agency:'Reserve Bank of India',description:'Escalate eligible complaints about regulated banks, NBFCs and payment services.',category:'Banking & insurance',url:'https://cms.rbi.org.in/',icon:'bank',note:'First raise the complaint with the regulated institution; check RBI eligibility.'},
+ {id:'sebi',title:'SEBI SCORES',agency:'Securities and Exchange Board of India',description:'Raise investor grievances concerning securities market entities.',category:'Banking & insurance',url:'https://scores.sebi.gov.in/',icon:'bank'},
+ {id:'insurance',title:'Bima Bharosa',agency:'Insurance Regulatory and Development Authority',description:'Register and track grievances about insurers and insurance services.',category:'Banking & insurance',url:'https://bimabharosa.irdai.gov.in/',icon:'shield'},
+ {id:'epfo',title:'EPFiGMS',agency:'Employees’ Provident Fund Organisation',description:'Get support for provident fund, EPF pension and related account grievances.',category:'Work & pensions',url:'https://epfigms.gov.in/',icon:'briefcase'},
+ {id:'pension',title:'CPENGRAMS',agency:'Department of Pension & Pensioners’ Welfare',description:'Lodge and track grievances about central government pensions.',category:'Work & pensions',url:'https://pgportal.gov.in/pension/',icon:'briefcase'},
+ {id:'labour',title:'SAMADHAN',agency:'Ministry of Labour & Employment',description:'Access the official platform for eligible industrial disputes and labour grievances.',category:'Work & pensions',url:'https://samadhan.labour.gov.in/',icon:'briefcase'},
+ {id:'rail',title:'RailMadad',agency:'Ministry of Railways',description:'Report train and station issues or request railway assistance.',category:'Travel & telecom',url:'https://railmadad.indianrailways.gov.in/madad/final/home.jsp',icon:'train',note:'Railway assistance: 139.'},
+ {id:'air',title:'AirSewa',agency:'Ministry of Civil Aviation',description:'Raise grievances about air travel, airlines and airport services.',category:'Travel & telecom',url:'https://airsewa.gov.in/',icon:'plane'},
+ {id:'telecom',title:'Sanchar Saathi',agency:'Department of Telecommunications',description:'Report suspected fraudulent communications and access lost-phone services.',category:'Travel & telecom',url:'https://sancharsaathi.gov.in/',icon:'phone',note:'If money has already been lost in cyber fraud, use 1930 and the cybercrime portal.'},
+ {id:'cvc',title:'Central Vigilance Commission',agency:'CVC · Government of India',description:'Find the complaint process for corruption within the Commission’s jurisdiction.',category:'Public services',url:'https://cvc.gov.in/',icon:'landmark'},
+ {id:'dpg',title:'Directorate of Public Grievances',agency:'Cabinet Secretariat',description:'Seek help with unresolved grievances concerning organisations covered by DPG.',category:'Public services',url:'https://dpg.gov.in/',icon:'landmark'},
+];
+export const categories = ['All portals', ...Array.from(new Set(portals.map(p=>p.category)))];
+export const contacts = [
+ {name:'Police',number:'100',description:'Police assistance. You can also use 112.',icon:'shield',category:'Emergency',source:'https://112.gov.in/'},
+ {name:'Ambulance',number:'108',description:'Emergency medical response. Availability varies by state; 112 is the national option.',icon:'medical',category:'Emergency',source:'https://nagarkurnool.telangana.gov.in/helpline/'},
+ {name:'Fire & rescue',number:'101',description:'Fire emergencies and rescue assistance.',icon:'fire',category:'Emergency',source:'https://nagarkurnool.telangana.gov.in/helpline/'},
+ {name:'Cyber fraud',number:'1930',description:'Report financial cyber fraud promptly.',icon:'shield',category:'Report & support',source:'https://cybercrime.gov.in/'},
+ {name:'Women’s helpline',number:'181',description:'Support for women in distress. State availability varies; use 112 for immediate danger.',icon:'heart',category:'Report & support',source:'https://www.spniwcd.wcd.gov.in/'},
+ {name:'Child helpline',number:'1098',description:'Help for children who need care and protection.',icon:'heart',category:'Report & support',source:'https://www.spniwcd.wcd.gov.in/'},
+ {name:'Senior citizen support',number:'14567',description:'Elderline support and guidance. Operating hours and coverage vary.',icon:'people',category:'Report & support',source:'https://scw.dosje.gov.in/'},
+ {name:'Railway assistance',number:'139',description:'Railway security, medical help and passenger grievances.',icon:'train',category:'Report & support',source:'https://railmadad.indianrailways.gov.in/'},
+ {name:'Consumer helpline',number:'1915',description:'Consumer grievances and support, 8 AM–8 PM.',icon:'bag',category:'Report & support',source:'https://consumerhelpline.gov.in/'},
+ {name:'Legal aid',number:'15100',description:'NALSA assistance to access legal services.',icon:'scale',category:'Report & support',source:'https://nalsa.gov.in/'},
+ {name:'National highway help',number:'1033',description:'Assistance for incidents on national highways.',icon:'road',category:'Emergency',source:'https://rajmargyatra.nhai.gov.in/'},
+ {name:'LPG gas leak',number:'1906',description:'Emergency assistance for LPG leakage.',icon:'fire',category:'Emergency',source:'https://www.pmuy.gov.in/ujjwala2.html'},
+];
